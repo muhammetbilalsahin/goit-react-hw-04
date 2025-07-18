@@ -1,0 +1,15 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 0fr));
+  gap: 14px; /* Daha yakın aralık */
+  margin-top: 20px;
+  list-style: none;
+}
+
+.item {
+  width: 300px;
+  height: 200px; /* Galeride sabit yükseklik */
+  overflow: hidden;
+  border-radius: 6px; /* Hafif daha küçük köşeler */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Daha hafif gölge */
+}
