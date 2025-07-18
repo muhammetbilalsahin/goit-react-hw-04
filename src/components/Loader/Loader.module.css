@@ -1,5 +1,11 @@
 .loader {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.loaderGif {
+  width: 120px;
+  height: 120px;
 }
