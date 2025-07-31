@@ -1,20 +1,13 @@
 import styles from "./ImageCard.module.css";
-
-function ImageCard({ image, onClick }) {
-  const handleClick = () => {
-    onClick(image);
-  };
-
+export default function ImageCard({ image, onImgClick }) {
   return (
-    <div className={styles.card}>
-      <img
-        src={image.urls.small}
-        alt={image.alt_description}
-        className={styles.image}
-        onClick={handleClick} 
-      />
-    </div>
+    <img
+      width={"400px"}
+      height={"350px"}
+      src={image.urls.small}
+      alt={image.description}
+      className={styles.image}
+      onClick={() => onImgClick(image)}
+    />
   );
 }
-
-export default ImageCard;
